@@ -1,11 +1,11 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Introduction from "Pages/Introduction/index";
+import Intro from "Pages/Intro";
 
 function App() {
   return (
     <div className="App">
-      <Introduction />
+      <Intro />
     </div>
   );
 }

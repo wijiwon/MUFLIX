@@ -7,6 +7,7 @@ const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  flex-grow: 0;
 `;
 
 const HeaderLogo = styled.p`

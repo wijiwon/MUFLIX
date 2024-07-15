@@ -1,6 +1,6 @@
 import React from "react";
 import { HeaderContainer, HeaderLogo } from "Styles/Header";
-import LoginButton from "./styled/LoginButton";
+import LoginButton from "./style/LoginButton";
 
 const index = () => {
   return (
