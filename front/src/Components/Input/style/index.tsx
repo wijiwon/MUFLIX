@@ -1,7 +1,11 @@
+import media from "Layouts/Headers/LoginHeader/style/mediaTemplate";
 import styled from "styled-components";
 
 const EmailContainer = styled.div`
+  box-sizing: border-box;
   position: relative;
+  /* min-width: 12.5rem; */
+
   & label {
     position: absolute;
     z-index: 1;
@@ -18,20 +22,32 @@ const EmailContainer = styled.div`
       font-size: 0.75rem;
       top: 0.5rem;
     }
+
+    ${media.mbl`
+      text-align: left;
+      width: 100%;
+
+    `}
   }
+  ${media.mbl`
+    width: -webkit-fill-available;
+
+  `}
 `;
 
 const EmailInputStyle = styled.input`
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(195, 195, 195, 0.7);
-  width: 100%;
-  min-width: 12.5rem;
   font-size: 1rem;
   line-height: 1.5;
   position: relative;
-  color: #ffffff;
   padding: 1.5rem 1rem 0.5rem;
   border-radius: 0.25rem;
+  color: white;
+  ${media.mbl`
+    width: -webkit-fill-available;
+
+  `}
 `;
 
 export { EmailContainer, EmailInputStyle };

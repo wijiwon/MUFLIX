@@ -3,7 +3,7 @@ import { Sizes } from "Interfaces/Media.interface";
 
 const sizes: Sizes = {
   mbl: 480,
-  desk: 1024,
+  desk: 9999,
 };
 
 const media = Object.keys(sizes).reduce(

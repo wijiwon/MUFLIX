@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import media from "Layouts/Headers/LoginHeader/style/mediaTemplate";
 
 const StartButton = styled.div`
+  box-sizing: border-box;
   background-color: #ff0000;
   padding: 0.75rem 1.5rem;
   font-size: 1.5rem;
@@ -20,11 +22,14 @@ const StartButton = styled.div`
     rotate: -135deg;
   }
 
-  &:hover{
+  &:hover {
     background-color: rgb(193, 17, 25);
   }
 
-
+  ${media.mbl`
+    margin-top: 1rem;
+    width: max-content;
+  `}
 `;
 
 export { StartButton };
