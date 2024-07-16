@@ -12,6 +12,11 @@ const LoginButton = styled.div`
   border-radius: 0.25rem;
   background: rgb(229, 9, 20);
   color: rgb(255, 255, 255);
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(193, 17, 25);
+  }
 `;
 
 export default LoginButton;

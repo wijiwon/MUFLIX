@@ -9,7 +9,6 @@ const index = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-          border: "1px solid, blue",
         }}
       >
         <h1>뮤지컬을 언제 어디서나 무제한으로</h1>
@@ -19,16 +18,7 @@ const index = () => {
         </p>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <EmailInput />
-          <StartButton>
-            시작하기
-            {/* <span
-              style={{
-                width: "24px",
-                height: "24px",
-                border: "2px solid white",
-              }}
-            /> */}
-          </StartButton>
+          <StartButton>시작하기</StartButton>
         </div>
       </div>
     </IntroContainer>
