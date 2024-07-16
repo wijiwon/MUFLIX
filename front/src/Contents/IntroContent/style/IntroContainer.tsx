@@ -1,3 +1,4 @@
+import media from "Layouts/Headers/LoginHeader/style/mediaTemplate";
 import styled from "styled-components";
 
 const IntroContainer = styled.div`
@@ -9,4 +10,12 @@ const IntroContainer = styled.div`
   flex: 1;
 `;
 
-export default IntroContainer;
+const EmailInputContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  ${media.mbl`
+    flex-direction: column;
+  `};
+`;
+
+export { IntroContainer, EmailInputContainer };

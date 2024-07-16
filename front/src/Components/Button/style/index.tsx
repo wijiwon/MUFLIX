@@ -23,6 +23,8 @@ const StartButton = styled.div`
   &:hover{
     background-color: rgb(193, 17, 25);
   }
+
+
 `;
 
 export { StartButton };

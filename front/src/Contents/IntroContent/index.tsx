@@ -1,5 +1,5 @@
 import React from "react";
-import IntroContainer from "./style/IntroContainer";
+import { IntroContainer, EmailInputContainer } from "./style/IntroContainer";
 import { EmailInput } from "Components/Input";
 import { StartButton } from "Components/Button/style";
 const index = () => {
@@ -16,10 +16,10 @@ const index = () => {
           시청할 준비가 되셨나요? 멤버십을 등록하려면 이메일 주소를
           입력해주세요.
         </p>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <EmailInputContainer>
           <EmailInput />
           <StartButton>시작하기</StartButton>
-        </div>
+        </EmailInputContainer>
       </div>
     </IntroContainer>
   );
