@@ -4,8 +4,7 @@ import styled from "styled-components";
 const EmailContainer = styled.div`
   box-sizing: border-box;
   position: relative;
-  /* min-width: 12.5rem; */
-
+  flex: 1 1 auto;
   & label {
     position: absolute;
     z-index: 1;
@@ -33,11 +32,16 @@ const EmailContainer = styled.div`
     width: -webkit-fill-available;
 
   `}
+
+  ${media.desk`
+      min-width: 12.5rem;
+  `}
 `;
 
 const EmailInputStyle = styled.input`
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(195, 195, 195, 0.7);
+  width: -webkit-fill-available;
   font-size: 1rem;
   line-height: 1.5;
   position: relative;

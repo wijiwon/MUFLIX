@@ -8,13 +8,16 @@ const StartButton = styled.div`
   font-size: 1.5rem;
   font-weight: 700;
   border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
   cursor: pointer;
 
   &:after {
     content: "";
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     border: 3px solid white;
     margin-left: 0.5rem;
     border-top: none;
