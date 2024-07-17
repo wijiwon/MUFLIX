@@ -1,14 +1,17 @@
 import React from "react";
 import { HeaderContainer, HeaderLogo } from "Styles/Header";
 import LoginButton from "./style/LoginButton";
+import { useLocation } from "react-router-dom";
 
-const index = () => {
+const LoginHeader = () => {
+  const { pathname } = useLocation();
   return (
     <HeaderContainer>
       <HeaderLogo>MUFLIX</HeaderLogo>
-      <LoginButton>로그인</LoginButton>
+
+      {pathname !== "/login" && <LoginButton>로그인</LoginButton>}
     </HeaderContainer>
   );
 };
 
-export default index;
+export default LoginHeader;

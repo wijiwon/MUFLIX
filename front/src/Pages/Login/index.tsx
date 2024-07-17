@@ -1,16 +1,17 @@
 import React from "react";
-import { IntroBackground, BackGradient } from "Contents/LoginBackground";
+import { BackGradient, LoginBackground } from "Contents/LoginBackground";
 import LoginHeader from "Layouts/Headers/LoginHeader";
-import IntroContent from "Contents/IntroContent";
+import LoginContent from "Contents/LoginContent";
+
 const index = () => {
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100vh" }}>
-      <IntroBackground>
+      <LoginBackground>
         <BackGradient>
           <LoginHeader />
-          <IntroContent />
+          <LoginContent />
         </BackGradient>
-      </IntroBackground>
+      </LoginBackground>
     </div>
   );
 };

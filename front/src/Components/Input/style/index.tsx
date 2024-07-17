@@ -1,4 +1,4 @@
-import media from "Layouts/Headers/LoginHeader/style/mediaTemplate";
+import media from "Styles/mediaTemplate";
 import styled from "styled-components";
 
 const EmailContainer = styled.div`

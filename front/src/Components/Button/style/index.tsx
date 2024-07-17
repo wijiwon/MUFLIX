@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import media from "Layouts/Headers/LoginHeader/style/mediaTemplate";
+import media from "Styles/mediaTemplate";
 
 const StartButton = styled.div`
   box-sizing: border-box;
