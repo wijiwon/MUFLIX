@@ -2,7 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import { IntroContainer } from "Contents/IntroContent/style/IntroContainer";
 import { LoginBox, InputContainer, LoginInput } from "./style/LoginBox";
 import { LoginButton } from "Components/Button/style";
+import { useNavigate } from "react-router-dom";
 const LoginContent = () => {
+  const nav = useNavigate();
+
   const [isEmailFocuse, setIsEmailFocuse] = useState(false);
   const [isPwFocuse, setIsPwFocuse] = useState(false);
 
@@ -37,19 +40,24 @@ const LoginContent = () => {
     }
   };
   const handleBlur = (e: React.FocusEvent<HTMLInputElement>) => {
-    //! 이메일 입력 인풋에 입력된 값이 있으면 true 상태여야 한다. (리덕스 작업 때 수정할 것!)
-    if (e.target == EmailInput.current) {
-      setIsEmailFocuse(false);
-    } else {
-      setIsPwFocuse(false);
+    if (e.target.value == "") {
+      if (e.target == EmailInput.current) {
+        setIsEmailFocuse(false);
+      } else {
+        setIsPwFocuse(false);
+      }
     }
+  };
+
+  const handleClick = () => {
+    nav("/loginHelp");
   };
 
   return (
     <IntroContainer className="loginC">
       <LoginBox>
         <h1 style={{ width: "100%", textAlign: "left" }}>로그인</h1>
-        <div>
+        <div style={{ width: "100%" }}>
           <InputContainer>
             <label ref={EmailLabel}>이메일 주소</label>
             <LoginInput
@@ -70,7 +78,9 @@ const LoginContent = () => {
         <div style={{ marginTop: "1rem" }}>
           <LoginButton className="loginB">로그인</LoginButton>
           {/* <p>또는</p> */}
-          <LoginButton className="pwB">비밀번호 찾기</LoginButton>
+          <LoginButton className="pwB" onClick={handleClick}>
+            비밀번호 찾기
+          </LoginButton>
         </div>
       </LoginBox>
     </IntroContainer>

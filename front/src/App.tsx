@@ -1,7 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Intro, Login } from "Pages";
 import { Globalstyle } from "Styles";
+import { Intro, Login, LoginHelp } from "Pages";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Intro />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/loginHelp" element={<LoginHelp />} />
         </Routes>
       </div>
     </>

@@ -29,7 +29,7 @@ const EmailContainer = styled.div`
     `}
   }
   ${media.mbl`
-    width: -webkit-fill-available;
+    width: 100%;
 
   `}
 
@@ -41,15 +41,16 @@ const EmailContainer = styled.div`
 const EmailInputStyle = styled.input`
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(195, 195, 195, 0.7);
-  width: -webkit-fill-available;
+  width: 100%;
   font-size: 1rem;
   line-height: 1.5;
   position: relative;
   padding: 1.5rem 1rem 0.5rem;
   border-radius: 0.25rem;
   color: white;
+  box-sizing: border-box;
   ${media.mbl`
-    width: -webkit-fill-available;
+    width: 100%e;
 
   `}
 `;

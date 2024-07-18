@@ -18,9 +18,10 @@ const LoginBox = styled.div`
 `;
 
 const LoginInput = styled.input`
+  box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(195, 195, 195, 0.7);
-  width: -webkit-fill-available;
+  width: 100%;
   font-size: 1rem;
   line-height: 1.5;
   position: relative;
@@ -28,7 +29,7 @@ const LoginInput = styled.input`
   border-radius: 0.25rem;
   color: white;
   ${media.mbl`
-    width: -webkit-fill-available;
+    width: 100%;
 
   `}
 `;
@@ -38,6 +39,7 @@ const InputContainer = styled.div`
   position: relative;
   flex: 1 1 auto;
   margin-top: 0.5rem;
+  width: 100%;
   & label {
     position: absolute;
     z-index: 1;
@@ -62,7 +64,7 @@ const InputContainer = styled.div`
     `}
   }
   ${media.mbl`
-    width: -webkit-fill-available;
+    width: 100%;
 
   `}
 

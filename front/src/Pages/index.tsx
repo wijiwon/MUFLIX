@@ -1,4 +1,4 @@
 import Intro from "./Intro";
 import Login from "./Login";
-
-export { Intro, Login };
+import LoginHelp from "./LoginHelp";
+export { Intro, Login, LoginHelp };

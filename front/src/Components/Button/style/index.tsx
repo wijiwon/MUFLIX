@@ -65,4 +65,23 @@ const LoginButton = styled.button`
     }
   }
 `;
-export { StartButton, LoginButton };
+
+const LoginHelpButton = styled.button`
+  width: 100%;
+  margin-top: 3rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  min-height: 2.5rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+
+  &:hover {
+    background: rgb(193, 17, 25);
+  }
+`;
+
+export { StartButton, LoginButton, LoginHelpButton };
