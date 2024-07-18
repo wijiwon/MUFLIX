@@ -53,6 +53,10 @@ const LoginContent = () => {
     nav("/loginHelp");
   };
 
+  const SignupClick = () => {
+    nav("/");
+  };
+
   return (
     <IntroContainer className="loginC">
       <LoginBox>
@@ -82,6 +86,10 @@ const LoginContent = () => {
             비밀번호 찾기
           </LoginButton>
         </div>
+        <p>
+          Muflix 회원이 아니신가요?{" "}
+          <span onClick={SignupClick}>지금 가입하세요.</span>
+        </p>
       </LoginBox>
     </IntroContainer>
   );

@@ -15,6 +15,20 @@ const LoginBox = styled.div`
   ${media.mbl`
     padding: 0 5%;
   `}
+
+  & p {
+    color: rgba(193, 193, 193, 0.7);
+    text-align: start;
+
+    & span {
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration-line: underline;
+      }
+    }
+  }
 `;
 
 const LoginInput = styled.input`
