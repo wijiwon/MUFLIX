@@ -13,6 +13,12 @@ const IntroContainer = styled.div`
     padding-left: 1rem;
     padding-right: 1rem;
   `}
+
+  &.loginC {
+    ${media.mbl`
+      align-items: flex-start;
+    `}
+  }
 `;
 
 const EmailInputContainer = styled.div`

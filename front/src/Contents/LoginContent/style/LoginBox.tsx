@@ -11,6 +11,10 @@ const LoginBox = styled.div`
   flex-direction: column;
   width: 100%;
   padding-bottom: 10rem;
+
+  ${media.mbl`
+    padding: 0 5%;
+  `}
 `;
 
 const LoginInput = styled.input`

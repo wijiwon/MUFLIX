@@ -46,7 +46,7 @@ const LoginContent = () => {
   };
 
   return (
-    <IntroContainer>
+    <IntroContainer className="loginC">
       <LoginBox>
         <h1 style={{ width: "100%", textAlign: "left" }}>로그인</h1>
         <div>
