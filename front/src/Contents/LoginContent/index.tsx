@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { IntroContainer } from "Contents/IntroContent/style/IntroContainer";
 import { LoginBox, InputContainer, LoginInput } from "./style/LoginBox";
+import { LoginButton } from "Components/Button/style";
 const LoginContent = () => {
   const [isEmailFocuse, setIsEmailFocuse] = useState(false);
   const [isPwFocuse, setIsPwFocuse] = useState(false);
@@ -66,7 +67,11 @@ const LoginContent = () => {
             />
           </InputContainer>
         </div>
-        
+        <div style={{ marginTop: "1rem" }}>
+          <LoginButton className="loginB">로그인</LoginButton>
+          {/* <p>또는</p> */}
+          <LoginButton className="pwB">비밀번호 찾기</LoginButton>
+        </div>
       </LoginBox>
     </IntroContainer>
   );

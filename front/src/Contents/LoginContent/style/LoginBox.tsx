@@ -10,6 +10,7 @@ const LoginBox = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-bottom: 10rem;
 `;
 
 const LoginInput = styled.input`
