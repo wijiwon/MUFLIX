@@ -1,6 +1,7 @@
 import React from "react";
 import { BackGradient, LoginBackground } from "Contents/LoginBackground";
 import LoginHeader from "Layouts/Headers/LoginHeader";
+import Footer from "Layouts/Footers";
 import LoginContent from "Contents/LoginContent";
 
 const index = () => {
@@ -12,6 +13,7 @@ const index = () => {
           <LoginContent />
         </BackGradient>
       </LoginBackground>
+      <Footer />
     </div>
   );
 };

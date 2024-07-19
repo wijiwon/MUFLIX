@@ -15,6 +15,7 @@ const HeaderLogo = styled.p`
   font-weight: 700;
   font-size: 2.5rem;
   margin: 0;
+  cursor: pointer;
 `;
 
 export { HeaderContainer, HeaderLogo };
