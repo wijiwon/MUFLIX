@@ -5,7 +5,11 @@ const Globalstyle = createGlobalStyle`
         background-color: #141414;
         color: #ffffff;
         min-width: 390px;
-
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        
         ${media.mbl`
             background-color: #000000
         `}
