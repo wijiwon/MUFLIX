@@ -2,7 +2,14 @@ import React from "react";
 import { IntroContainer, EmailInputContainer } from "./style/IntroContainer";
 import { EmailInput } from "Components/Input";
 import { StartButton } from "Components/Button/style";
-const index = () => {
+import { useNavigate } from "react-router-dom";
+const IntroContent = () => {
+  const nav = useNavigate();
+
+  const handleClick = () => {
+    //! 이메일이 정상적으로 입력되었을 경우에만 넘어갈 수 있다. (정규식 사용해서 확인하자)
+    nav("signup");
+  };
   return (
     <IntroContainer>
       <div
@@ -18,11 +25,11 @@ const index = () => {
         </p>
         <EmailInputContainer>
           <EmailInput />
-          <StartButton>시작하기</StartButton>
+          <StartButton onClick={handleClick}>시작하기</StartButton>
         </EmailInputContainer>
       </div>
     </IntroContainer>
   );
 };
 
-export default index;
+export default IntroContent;
