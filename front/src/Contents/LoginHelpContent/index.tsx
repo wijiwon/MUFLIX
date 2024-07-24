@@ -1,9 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { LoginHelpContainer } from "./style/LoginhelpContainer";
-import {
-  InputContainer,
-  LoginInput,
-} from "Contents/LoginContent/style/LoginBox";
+import { InputContainer, LoginInput } from "Components/Input/style";
 import { LoginHelpButton } from "Components/Button/style";
 const LoginHelpContent = () => {
   const findpwL = useRef<HTMLLabelElement>(null);
@@ -39,7 +36,7 @@ const LoginHelpContent = () => {
       <InputContainer>
         <label ref={findpwL}>이메일 주소</label>
         <LoginInput onFocus={handleFocus} onBlur={handleBlur} />
-      <LoginHelpButton>비밀번호 찾기</LoginHelpButton>
+        <LoginHelpButton>비밀번호 찾기</LoginHelpButton>
       </InputContainer>
     </LoginHelpContainer>
   );

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const SignupContainer = styled.div`
   border: 1px solid red;
-  /* position: relative; */
+  position: relative;
   display: flex;
   overflow: hidden;
   text-align: center;
@@ -10,11 +10,26 @@ const SignupContainer = styled.div`
   max-width: 800px;
   flex: 1;
   box-sizing: border-box;
-  padding: 0 1rem;
 `;
 
 const StepContainer = styled.div`
-  
-`
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+  transition: left 0.3s ease-in-out;
 
-export { SignupContainer };
+  &.active {
+    left: 0;
+    z-index: 1;
+  }
+
+  &:not(.active) {
+    visibility: hidden;
+  }
+`;
+
+export { SignupContainer, StepContainer };

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { IntroContainer } from "Contents/IntroContent/style/IntroContainer";
-import { LoginBox, InputContainer, LoginInput } from "./style/LoginBox";
+import { LoginBox } from "./style/LoginBox";
+import { InputContainer, LoginInput } from "Components/Input/style";
 import { LoginButton } from "Components/Button/style";
 import { useNavigate } from "react-router-dom";
 const LoginContent = () => {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { EmailInputStyle, EmailContainer } from "./style";
+import { LoginInput, EmailContainer } from "./style";
 
 const EmailInput = () => {
   const [isFocuse, setIsFocuse] = useState(false);
@@ -26,7 +26,7 @@ const EmailInput = () => {
   return (
     <EmailContainer>
       <label className="emailLabel">이메일 주소</label>
-      <EmailInputStyle onFocus={handleFocus} onBlur={handleBlur} />
+      <LoginInput onFocus={handleFocus} onBlur={handleBlur} />
     </EmailContainer>
   );
 };
