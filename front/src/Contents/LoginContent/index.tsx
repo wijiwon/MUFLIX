@@ -74,6 +74,7 @@ const LoginContent = () => {
           <InputContainer>
             <label ref={PwLabel}>비밀번호</label>
             <LoginInput
+              type="password"
               ref={PwInput}
               onFocus={handleFocus}
               onBlur={handleBlur}

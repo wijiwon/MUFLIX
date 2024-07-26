@@ -7,7 +7,8 @@ const SignupContainer = styled.div`
   overflow: hidden;
   text-align: center;
   width: 100%;
-  max-width: 800px;
+  height: 100%;
+  max-width: 700px;
   flex: 1;
   box-sizing: border-box;
 `;
@@ -32,4 +33,23 @@ const StepContainer = styled.div`
   }
 `;
 
-export { SignupContainer, StepContainer };
+const PopupContainer = styled.div`
+  /* display: none; */
+  box-sizing: border-box;
+  border: 1px solid yellowgreen;
+  position: absolute;
+  z-index: 1;
+  width: 70%;
+  height: 100%;
+  height: inherit;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  font-size: 12px;
+  text-align: start;
+  overflow-y: scroll;
+`;
+
+export { SignupContainer, StepContainer, PopupContainer };
