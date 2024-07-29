@@ -60,11 +60,7 @@ const Step1 = (props: {
 
   const handleNext = () => {
     props.onNext();
-    setIsNext(true);
 
-    setTimeout(() => {
-      setIsNext(false);
-    }, 300);
   };
 
   const handlePopup = () => {
@@ -77,7 +73,7 @@ const Step1 = (props: {
     document.body.style.overflowY = "scroll";
   };
   return (
-    <StepBox className={isNext ? "next" : ""}>
+    <StepBox>
       <TitleBox>
         <p style={{ fontSize: "13px" }}>1 / 3 단계</p>
         <h1>비밀번호를 설정해 멤버십을 시작하세요</h1>

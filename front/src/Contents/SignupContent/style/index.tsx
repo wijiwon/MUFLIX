@@ -89,6 +89,42 @@ const NextButton = styled.button`
   }
 `;
 
+const PrevButton = styled.button`
+  box-sizing: border-box;
+  background-color: rgba(193, 193, 193, 0.7);
+  color: white;
+  width: 30%;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(99, 99, 99, 0.7);
+  }
+`;
+
+const PaymentBox = styled.div`
+  box-sizing: border-box;
+  width: 100%;
+`;
+
+const PaymentButton = styled.div`
+  box-sizing: border-box;
+  border: 1px solid rgb(193, 193, 193, 0.7);
+  border-radius: 0.25rem;
+  width: 100%;
+  cursor: pointer;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: start;
+
+  &:hover {
+    border: 1px solid red;
+  }
+`;
+
 export {
   StepBox,
   TitleBox,
@@ -97,4 +133,7 @@ export {
   ButtonBox,
   CheckItem,
   NextButton,
+  PaymentBox,
+  PaymentButton,
+  PrevButton,
 };
