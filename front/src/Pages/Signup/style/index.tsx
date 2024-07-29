@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import media from "Styles/mediaTemplate";
 
 const SignupContainer = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: relative;
   display: flex;
   overflow: hidden;
@@ -48,6 +49,11 @@ const PopupContainer = styled.div`
   font-size: 12px;
   text-align: start;
   overflow-y: scroll;
+
+  ${media.mbl`
+    width: 80vw
+    /* height: 70vh */
+  `}
 `;
 
 const PopupBackground = styled.div`

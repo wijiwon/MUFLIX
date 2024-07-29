@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "Styles/mediaTemplate";
 
 const StepBox = styled.div`
   width: 100%;
@@ -18,7 +19,15 @@ const TitleBox = styled.div`
 
   & h1 {
     margin-top: 0;
+
+    ${media.mbl`
+      font-size:1.4rem
+    `}
   }
+
+  ${media.mbl`
+    margin-top: 0;
+  `}
 `;
 
 const InputBox = styled.div`
@@ -64,6 +73,21 @@ const CheckItem = styled.div`
   }
 `;
 
+const NextButton = styled.button`
+  box-sizing: border-box;
+  background-color: red;
+  color: white;
+  width: 100%;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(193, 17, 25);
+  }
+`;
 
 export {
   StepBox,
@@ -72,4 +96,5 @@ export {
   CheckBox,
   ButtonBox,
   CheckItem,
+  NextButton,
 };

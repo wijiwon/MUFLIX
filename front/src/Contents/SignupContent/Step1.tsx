@@ -6,6 +6,7 @@ import {
   CheckBox,
   ButtonBox,
   CheckItem,
+  NextButton,
 } from "./style";
 import { InputContainer, LoginInput } from "Components/Input/style";
 const Step1 = (props: {
@@ -118,7 +119,7 @@ const Step1 = (props: {
         </CheckItem>
       </CheckBox>
       <ButtonBox>
-        <button onClick={handleNext}>다음</button>
+        <NextButton onClick={handleNext}>동의하고 계속</NextButton>
       </ButtonBox>
     </StepBox>
   );
