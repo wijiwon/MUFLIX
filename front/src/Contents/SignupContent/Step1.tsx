@@ -8,7 +8,11 @@ import {
   CheckItem,
 } from "./style";
 import { InputContainer, LoginInput } from "Components/Input/style";
-const Step1 = (props: { onNext: () => void }) => {
+const Step1 = (props: {
+  onNext: () => void;
+  pop: React.Dispatch<React.SetStateAction<boolean>>;
+  scroll: React.Dispatch<React.SetStateAction<number>>;
+}) => {
   const [isNext, setIsNext] = useState(false);
   const [isEmailFocuse, setIsEmailFocuse] = useState(false);
   const [isPwFocuse, setIsPwFocuse] = useState(false);
@@ -62,7 +66,15 @@ const Step1 = (props: { onNext: () => void }) => {
     }, 300);
   };
 
-  const handlePopup = () => {};
+  const handlePopup = () => {
+    props.pop(true);
+    const currentScrollY = window.scrollY;
+    props.scroll(currentScrollY);
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
+    document.body.style.top = `-${currentScrollY}px`; // 현재 스크롤 위치
+    document.body.style.overflowY = "scroll";
+  };
   return (
     <StepBox className={isNext ? "next" : ""}>
       <TitleBox>

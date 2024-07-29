@@ -34,14 +34,12 @@ const StepContainer = styled.div`
 `;
 
 const PopupContainer = styled.div`
-  /* display: none; */
   box-sizing: border-box;
-  border: 1px solid yellowgreen;
+  border: 1px solid rgba(193, 193, 193, 0.5);
   position: absolute;
   z-index: 1;
-  width: 70%;
-  height: 100%;
-  height: inherit;
+  width: 40vw;
+  height: calc(100vh - 200px);
   background-color: black;
   top: 50%;
   left: 50%;
@@ -52,4 +50,14 @@ const PopupContainer = styled.div`
   overflow-y: scroll;
 `;
 
-export { SignupContainer, StepContainer, PopupContainer };
+const PopupBackground = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+`;
+
+export { SignupContainer, StepContainer, PopupContainer, PopupBackground };
