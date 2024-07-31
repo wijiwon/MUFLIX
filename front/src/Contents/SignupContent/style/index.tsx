@@ -125,6 +125,71 @@ const PaymentButton = styled.div`
   }
 `;
 
+const PlanBox = styled.div`
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  gap: 8px;
+`;
+
+const PlanItem = styled.button`
+  box-sizing: border-box;
+  border: 1px solid rgba(193, 193, 193, 0.7);
+  width: 100%;
+  text-align: start;
+  padding: 1rem;
+  color: white;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 115px;
+  cursor: pointer;
+
+  & p {
+    margin: 0;
+    font-size: 18px;
+    &.subText {
+      font-size: 12px;
+    }
+  }
+
+  &.check {
+    /* 체크 시 효과 */
+    border: none;
+    &.premium {
+      background: radial-gradient(
+          140.76% 131.96% at 100% 100%,
+          rgb(229, 9, 20) 0%,
+          rgba(74, 42, 150, 0.5) 73.57%,
+          rgba(74, 42, 150, 0) 100%
+        ),
+        rgb(29, 82, 157);
+    }
+
+    &.standard {
+      background: radial-gradient(
+          140.76% 131.96% at 100% 100%,
+          rgb(176, 56, 220) 0%,
+          rgba(74, 42, 150, 0.5) 73.57%,
+          rgba(74, 42, 150, 0) 100%
+        ),
+        rgb(29, 82, 157);
+    }
+
+    &.ad {
+      background: radial-gradient(
+          140.76% 131.96% at 100% 100%,
+          rgb(109, 59, 227) 0%,
+          rgba(74, 42, 150, 0.5) 73.57%,
+          rgba(74, 42, 150, 0) 100%
+        ),
+        rgb(29, 82, 157);
+    }
+  }
+`;
+
 export {
   StepBox,
   TitleBox,
@@ -136,4 +201,6 @@ export {
   PaymentBox,
   PaymentButton,
   PrevButton,
+  PlanBox,
+  PlanItem,
 };
