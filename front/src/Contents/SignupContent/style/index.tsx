@@ -12,7 +12,6 @@ const TitleBox = styled.div`
   width: 100%;
   text-align: start;
   margin-bottom: 3rem;
-  margin-top: 5rem;
   & p {
     margin: 0;
   }
@@ -190,6 +189,42 @@ const PlanItem = styled.button`
   }
 `;
 
+const DetailBox = styled.div`
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 3rem;
+`;
+
+const PlanDetail = styled.div`
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  & div {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px rgb(193, 193, 193) solid;
+    padding-bottom: 0.7rem;
+    margin-bottom: 1rem;
+
+    & p {
+      font-size: 0.85rem;
+      margin: 0;
+      color: #c1c1c1;
+      font-weight: bold;
+    }
+
+    & .value {
+      font-size: 1rem;
+      color: white;
+      font-weight: normal;
+    }
+  }
+`;
+
 export {
   StepBox,
   TitleBox,
@@ -203,4 +238,6 @@ export {
   PrevButton,
   PlanBox,
   PlanItem,
+  DetailBox,
+  PlanDetail,
 };

@@ -1,7 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { Globalstyle } from "Styles";
-import { Intro, Login, LoginHelp, Signup } from "Pages";
+import { Intro, Login, LoginHelp, Signup, Profiles } from "Pages";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/loginHelp" element={<LoginHelp />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/profiles" element={<Profiles />} />
         </Routes>
       </div>
     </>

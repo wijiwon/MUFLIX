@@ -58,6 +58,10 @@ const LoginContent = () => {
     nav("/");
   };
 
+  const handleLogin = () => {
+    nav("/profiles");
+  };
+
   return (
     <IntroContainer className="loginC">
       <LoginBox>
@@ -82,7 +86,9 @@ const LoginContent = () => {
           </InputContainer>
         </div>
         <div style={{ marginTop: "1rem" }}>
-          <LoginButton className="loginB">로그인</LoginButton>
+          <LoginButton className="loginB" onClick={handleLogin}>
+            로그인
+          </LoginButton>
           {/* <p>또는</p> */}
           <LoginButton className="pwB" onClick={handleClick}>
             비밀번호 찾기
